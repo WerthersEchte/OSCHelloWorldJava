@@ -1,11 +1,11 @@
-package de.fhkiel.seg.example_without_library;
+package de.fhkiel.mediaip.example_without_library;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-import static de.fhkiel.seg.example_without_library.osc.Encoder.toOSC;
+import static de.fhkiel.mediaip.example_without_library.osc.Encoder.toOSC;
 
 public class OSCSender {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class OSCSender {
             System.out.println(toSend.length() + ": " + toSend);
 
             // ein Packet mit dem Payload, der Adresse und Port erstellen
-            DatagramPacket packet = new DatagramPacket(toSend.getBytes(), toSend.length(), InetAddress.getByName("localhost"),9001);
+            DatagramPacket packet = new DatagramPacket(toSend.getBytes(), toSend.length(), InetAddress.getByName("149.222.206.225"),9000);
 
             // das Packet senden
             socket.send(packet);

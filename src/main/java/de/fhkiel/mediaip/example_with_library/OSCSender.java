@@ -1,4 +1,4 @@
-package de.fhkiel.seg.example_with_library;
+package de.fhkiel.mediaip.example_with_library;
 
 import com.illposed.osc.OSCMessage;
 import com.illposed.osc.OSCSerializeException;
@@ -15,7 +15,7 @@ public class OSCSender {
         try {
             // einen Port an eine  Addresse an die OSC Nachrichten gesendet werden sollen definieren, in diesem Fall der eigene Rechner('localhost')
             // genutzte Bibliothek: https://github.com/hoijui/JavaOSC
-            OSCPortOut sender = new OSCPortOut(InetAddress.getByName("localhost"), 9001);
+            OSCPortOut sender = new OSCPortOut(InetAddress.getByName("149.222.206.225"), 9000);
 
             // eine Liste von Daten, die gesendet werden sollen definieren, in diesem Fall ein Int, Float, Double und String
             List<Object> data = new ArrayList<Object>();

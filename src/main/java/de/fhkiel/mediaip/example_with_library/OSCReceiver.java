@@ -1,4 +1,4 @@
-package de.fhkiel.seg.example_with_library;
+package de.fhkiel.mediaip.example_with_library;
 
 import com.illposed.osc.MessageSelector;
 import com.illposed.osc.OSCMessageEvent;

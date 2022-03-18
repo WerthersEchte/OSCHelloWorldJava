@@ -1,4 +1,4 @@
-package de.fhkiel.seg.example_without_library.osc;
+package de.fhkiel.mediaip.example_without_library.osc;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
